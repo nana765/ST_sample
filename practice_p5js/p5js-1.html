@@ -1,0 +1,22 @@
+
+<html>
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/p5.min.js"></script>
+		<script>
+			function setup(){
+				createCanvas(800,600);
+			}		
+		
+			function draw(){
+				for(var i = 0;i < 10;i++){
+					fill(0,0,random(200,255));
+					noStroke();
+					ellipse(random(width),random(height),20,20);
+				}	
+			}		
+</script>
+</head>
+<body>
+</body>
+</html>
+

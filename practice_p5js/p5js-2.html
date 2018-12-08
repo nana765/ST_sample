@@ -1,0 +1,33 @@
+
+<html>
+	<head>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.4/p5.min.js"></script>
+		<script>
+			var x = 0;
+			function setup(){
+				createCanvas(800,600);
+			}		
+		
+			function draw(){
+				background(255);
+
+				if (x < 200) {
+					fill(255,0,0);
+				} else {
+					fill(0,255,0);
+				}
+
+				ellipse(x*2,300,50,50);
+				x = x + 1;
+				if(x > width/2){
+					x = 0;
+				}
+
+			}		
+</script>
+</head>
+<body>
+</body>
+</html>
+
+
